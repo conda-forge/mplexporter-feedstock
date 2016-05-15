@@ -5,7 +5,7 @@ Home: https://github.com/mpld3/mplexporter
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: General Matplotlib Exporter
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mplexporter-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/mplexporter-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/mplexporter-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mplexporter-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mplexporter-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mplexporter-feedstock/branch/master)
