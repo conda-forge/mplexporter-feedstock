@@ -1,35 +1,37 @@
 {% set version = "0.0.1" %}
+{% set commit = "577609a60a9680b0114b4576cd0efaebdc59280d" %}
 
 package:
-    name: mplexporter
-    version: {{ version }}
+  name: mplexporter
+  version: {{ version }}
 
 source:
-    git_url: https://github.com/mpld3/mplexporter.git
-    git_tag: 7bfe2ba772db2f63a4c6eddc583dab495ead39c1
+  fn: {{ commit }}.tar.gz
+  url: https://github.com/mpld3/mplexporter/archive/{{ commit }}.tar.gz
+  sha256: a92c5b634e2c4f241022c7600c31984edc515508450940892823c7fe2197e9d0
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - matplotlib
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - matplotlib
 
 test:
-    imports:
-        - mplexporter
+  imports:
+    - mplexporter
 
 about:
-    home: https://github.com/mpld3/mplexporter
-    license: BSD-3-Clause
-    summary: General Matplotlib Exporter
+  home: https://github.com/mpld3/mplexporter
+  license: BSD 3-Clause
+  summary: 'General Matplotlib Exporter.'
 
 extra:
-    recipe-maintainers:
-        - jakevdp
-        - ocefpaf
+  recipe-maintainers:
+    - jakevdp
+    - ocefpaf
