@@ -14,14 +14,15 @@ Summary: General Matplotlib Exporter.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mplexporter-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mplexporter-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mplexporter-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mplexporter-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mplexporter-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mplexporter-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/mplexporter-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/mplexporter-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mplexporter/badges/version.svg)](https://anaconda.org/conda-forge/mplexporter)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mplexporter/badges/downloads.svg)](https://anaconda.org/conda-forge/mplexporter)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mplexporter-green.svg)](https://anaconda.org/conda-forge/mplexporter) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mplexporter.svg)](https://anaconda.org/conda-forge/mplexporter) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mplexporter.svg)](https://anaconda.org/conda-forge/mplexporter) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mplexporter.svg)](https://anaconda.org/conda-forge/mplexporter) |
 
 Installing mplexporter
 ======================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
