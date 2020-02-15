@@ -3,11 +3,11 @@ About mplexporter
 
 Home: https://github.com/mpld3/mplexporter
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: General Matplotlib Exporter.
+Summary: General Matplotlib Exporter
 
 
 
