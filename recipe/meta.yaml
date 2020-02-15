@@ -1,5 +1,5 @@
 {% set version = "0.0.1" %}
-{% set commit = "577609a60a9680b0114b4576cd0efaebdc59280d" %}
+{% set commit = "474a3a49fe3b3dca859f69a6173263018dd2d34c" %}
 
 package:
   name: mplexporter
@@ -8,21 +8,20 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/mpld3/mplexporter/archive/{{ commit }}.tar.gz
-  sha256: a92c5b634e2c4f241022c7600c31984edc515508450940892823c7fe2197e9d0
+  sha256: 8d2a11befcb32dd6a757a2948db4d370a3dd4aa0b91a282674cc2e4bc175d883
 
 build:
+  number: 3
   noarch: python
-  number: 2
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
   run:
     - python
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
@@ -30,8 +29,9 @@ test:
 
 about:
   home: https://github.com/mpld3/mplexporter
-  license: BSD 3-Clause
-  summary: 'General Matplotlib Exporter.'
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: 'General Matplotlib Exporter'
 
 extra:
   recipe-maintainers:
