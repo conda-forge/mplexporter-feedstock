@@ -11,19 +11,21 @@ source:
   sha256: 8d2a11befcb32dd6a757a2948db4d370a3dd4aa0b91a282674cc2e4bc175d883
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - matplotlib-base
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mplexporter
 
